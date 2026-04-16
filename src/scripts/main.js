@@ -5,7 +5,7 @@ document.addEventListener('click', (e) => {
   const spider = document.querySelector('.spider');
   const wall = document.querySelector('.wall');
 
-  if (e.target !== wall) {
+  if (!wall.contains(e.target)) {
     return; // Виходимо з функції
   }
   // отримуємо поточне положення стіни на екрані,
